@@ -1,0 +1,996 @@
+{
+	"info": {
+		"_postman_id": "5d976cdb-8d0b-4e37-bc5d-e5196914bf36",
+		"name": "Todo List - Waizly",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5440704",
+		"_collection_link": "https://simbes.postman.co/workspace/My-Workspace~d8ccec3b-1228-4cf5-84f7-19e2cd0ce1c0/collection/5440704-5d976cdb-8d0b-4e37-bc5d-e5196914bf36?action=share&creator=5440704&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Register",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Ilham",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "ilham@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "ilham123",
+									"type": "text"
+								},
+								{
+									"key": "confirm_password",
+									"value": "ilham123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/register",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Ilham",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "ilham@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "ilham123",
+											"type": "text"
+										},
+										{
+											"key": "confirm_password",
+											"value": "ilham123",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/register",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"register"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 11 Jun 2023 14:06:23 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 11 Jun 2023 14:06:23 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"meta\": {\n        \"code\": 200,\n        \"status\": \"success\",\n        \"message\": \"User register successfully.\"\n    },\n    \"data\": {\n        \"user\": {\n            \"name\": \"Ilham\",\n            \"email\": \"ilham@gmail.com\",\n            \"updated_at\": \"2023-06-11T14:06:23.000000Z\",\n            \"created_at\": \"2023-06-11T14:06:23.000000Z\",\n            \"id\": 3\n        },\n        \"token\": \"2|hHYz68P3GOFVMOQdohNyYUp3PL9RHYZCE6YATG6k\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "ilham@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "ilham123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/login",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "ilham@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "ilham123",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/login",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 11 Jun 2023 14:16:36 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 11 Jun 2023 14:16:36 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"meta\": {\n        \"code\": 200,\n        \"status\": \"success\",\n        \"message\": \"User register successfully.\"\n    },\n    \"data\": {\n        \"user\": {\n            \"id\": 3,\n            \"name\": \"Ilham\",\n            \"email\": \"ilham@gmail.com\",\n            \"email_verified_at\": null,\n            \"created_at\": \"2023-06-11T14:06:23.000000Z\",\n            \"updated_at\": \"2023-06-11T14:06:23.000000Z\"\n        },\n        \"token\": \"9|U0BP60ZQZ0tx5nvbHTUebzle4KsxwYvOm8Fy7ofW\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Todo",
+			"item": [
+				{
+					"name": "Index",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/todo?search=test",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"todo"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "test"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Index",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/todo?search=test",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"todo"
+									],
+									"query": [
+										{
+											"key": "search",
+											"value": "test"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 11 Jun 2023 14:21:48 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 11 Jun 2023 14:21:48 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "56"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"meta\": {\n        \"code\": 200,\n        \"status\": \"success\",\n        \"message\": null\n    },\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"test\",\n            \"description\": \"test-desc\",\n            \"status\": \"onprogress\",\n            \"created_at\": \"2023-06-11T14:21:12.000000Z\",\n            \"updated_at\": \"2023-06-11T14:21:12.000000Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Store",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "test-desc",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/todo",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"todo"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Store",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "test",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "test-desc",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/todo",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"todo"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 11 Jun 2023 14:21:12 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 11 Jun 2023 14:21:12 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"meta\": {\n        \"code\": 200,\n        \"status\": \"success\",\n        \"message\": \"Todo created successfully\"\n    },\n    \"data\": {\n        \"name\": \"test\",\n        \"description\": \"test-desc\",\n        \"updated_at\": \"2023-06-11T14:21:12.000000Z\",\n        \"created_at\": \"2023-06-11T14:21:12.000000Z\",\n        \"id\": 1\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Show",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{url}}/todo/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"todo",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Store Copy",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{url}}/todo/1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"todo",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 11 Jun 2023 14:23:05 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 11 Jun 2023 14:23:05 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"meta\": {\n        \"code\": 200,\n        \"status\": \"success\",\n        \"message\": \"Todo retrieved successfully\"\n    },\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"test\",\n        \"description\": \"test-desc\",\n        \"status\": \"onprogress\",\n        \"created_at\": \"2023-06-11T14:21:12.000000Z\",\n        \"updated_at\": \"2023-06-11T14:21:12.000000Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "test1",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "test-desc",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/todo/1/update",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"todo",
+								"1",
+								"update"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "test1",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "test-desc",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/todo/1/update",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"todo",
+										"1",
+										"update"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 11 Jun 2023 14:32:14 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 11 Jun 2023 14:32:14 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"meta\": {\n        \"code\": 200,\n        \"status\": \"success\",\n        \"message\": \"Todo updated successfully\"\n    },\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"test1\",\n        \"description\": \"test-desc\",\n        \"status\": \"onprogress\",\n        \"created_at\": \"2023-06-11T14:21:12.000000Z\",\n        \"updated_at\": \"2023-06-11T14:32:14.000000Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{url}}/todo/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"todo",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Copy",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{url}}/todo/1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"todo",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 11 Jun 2023 14:33:49 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 11 Jun 2023 14:33:49 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"meta\": {\n        \"code\": 200,\n        \"status\": \"success\",\n        \"message\": \"Todo deleted successfully\"\n    },\n    \"data\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "SetDone",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "test1",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "test-desc",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/todo/1/done",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"todo",
+								"1",
+								"done"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Copy",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "test1",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "test-desc",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/todo/2/done",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"todo",
+										"2",
+										"done"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 11 Jun 2023 14:35:30 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 11 Jun 2023 14:35:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"meta\": {\n        \"code\": 200,\n        \"status\": \"success\",\n        \"message\": \"Todo set done successfully\"\n    },\n    \"data\": {\n        \"id\": 2,\n        \"name\": \"test\",\n        \"description\": \"test-desc\",\n        \"status\": \"done\",\n        \"created_at\": \"2023-06-11T14:33:58.000000Z\",\n        \"updated_at\": \"2023-06-11T14:35:30.000000Z\"\n    }\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://127.0.0.1:8000/api",
+			"type": "string"
+		},
+		{
+			"key": "token",
+			"value": "8|eHgF2oAPvwdREvbngS3pn4ei6vD5Uy65cN5TlPPk",
+			"type": "string"
+		}
+	]
+}
